@@ -1,0 +1,226 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+html,body{
+    /*background: rgb(3, 1, 19);
+    width: 100%;
+    height: 100%;*/
+    color: rgb(255, 255, 255);
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: rgba(228, 197, 26, 0.795);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar a{
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: 3ms;
+}
+
+.navbar a:hover,
+.navbar a.active{
+    color: blue;
+}
+
+.home{
+    height: 100vh;
+    background: url('56.jpg') ;
+    background-size: cover;
+    background-position: center;  
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    animation: change 14s infinite ease-in-out;
+}
+
+.home-content{
+    max-width: 600px;
+}
+
+.home-content h1{
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: black;
+    text-decoration: underline;
+}
+
+.home-content h3{
+    font-size: 32px;
+    font-weight: 700;
+    color: rgba(71, 56, 14, 0.548);
+}
+
+.home-content p {
+    font-size: 20px;
+    margin: 20px 0 40px;
+    color: rgb(0, 0, 0);
+    
+}
+
+.home-content .btn-box{
+    display: flex;
+    justify-content: space-between;
+    width: 345px;
+    height: 50px;
+}
+
+.btn-box a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: transparent;
+    border: 2px solid #391440;
+    border-radius: 8px;
+    font-size: 19px;
+    color: blue;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.btn-box a:hover{
+    color: rgb(0, 60, 255);
+}
+
+.btn-box a:nth-child(2){
+    background: transparent;
+    color: blue;
+}
+
+.btn-box a:nth-child(2):hover{
+    color: black;
+}
+
+.btn-box a:nth-child(2)::before{
+    background: rgb(154, 4, 241);
+}
+
+.btn-box a::before{
+    content:  '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: rgb(30, 255, 0);
+    z-index: -1;
+    transition: .5s;
+}
+
+.btn-box a:hover::before{
+    width: 100%;
+}
+
+.home-sci{
+    position: absolute;
+    bottom: 40px;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;    
+}
+
+.home-sci a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #ece8e8fb;
+    border-radius: 50%;
+    font-size: 20px;
+    color: blue;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.home-sci a:hover{
+    color: black;
+}
+
+.home-sci a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: rgb(255, 255, 255);
+    z-index: -1;
+    transition: .5s;
+}
+
+.home-sci a:hover::before{
+    width: 100%;
+}
+
+/*@keyframes change{
+    0%
+    {
+        background-image: url(ayurved.jpg.);
+    }
+    20%
+    {
+        background-image: url(Ayurvedic-Beauty-Tips-for-your-Skin-Type-f1-685x336.jpg);
+    }
+    40%
+    {
+        background-image: url(Ayurvedic-Medicine-Manufacturer-in-Kanpur.jpg);
+    }
+    60%
+    {
+        background-image: url(Ubtan-1.jpg);
+    }
+    80%
+    {
+        background-image: url(download.jpg);
+    }
+    100%
+    {
+        background-image: url(Ayurvedic-Medicine-Manufacturer-in-Kanpur.jpg);
+    }
+} */
+
+.container12{
+    width: 100%;
+    height: .5vh;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow:  0px 5px 25px rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+  }
